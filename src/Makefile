@@ -57,7 +57,7 @@ install: $(addprefix install/,$(LIB).la)
 tests_st: tests_st.o
 	$(CC) $(CFLAGS) $(LDFLAGS) $< -o masstree_st_test -lpthread
 
-main: main.o
+main: main.ox
 	$(CC) $(CFLAGS) $(LDFLAGS) $< -o masstree_main
 
 tests_mt: tests_mt.o
